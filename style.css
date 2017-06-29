@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Retro';
+  src:url('Alt_Retro_Thin.ttf');
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: 'RetroLight';
+  src:url('Alt_Retro_Light.ttf');
+  font-weight:normal;
+}
+
+body {
+  background:#bbaa99;
+}
+
+h1 {
+  font-family:'Retro';
+  font-weight:bold;
+  font-size: 200px;
+  color:black;
+  margin-bottom:-20px;
+  display: block;
+}
+
+#caption {
+  text-align:left;
+  background:none;
+  padding-left: 10px;
+}
+
+p {
+  font-family: 'Retro';
+  font-weight:lighter;
+  font-size:50px;
+}
+
+aside {
+  display:flex;
+  background:white;
+  flex-direction:column;
+  align-items:flex-end;
+  margin-top:-140px;
+  padding-top:20px;
+  margin-right:auto;
+  min-width:1000px;
+}
+
+div {
+  text-align:center;
+  font-family:'Retro';
+  font-size:100px;
+}
+
+#red {
+  color:red;
+}
+
+#orange{
+  color:orange;
+}
+
+#blue {
+  color:blue;
+}
+
+#yellow {
+  color:yellow;
+}
+
+#green {
+  color:green;
+}
+
+a {
+  text-decoration:none;
+  color: #bbaa99
+}
+
+a:hover {
+  font-weight:normal;
+  text-decoration: underline;
+  font-family: 'RetroLight';
+}
