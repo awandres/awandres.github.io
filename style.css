@@ -10,6 +10,12 @@
   font-weight:normal;
 }
 
+@font-face {
+  font-family: 'RetroRegular';
+  src:url('Alt_Retro_Regular.ttf');
+  font-weight:normal;
+}
+
 body {
   background:#bbaa99;
 }
@@ -17,16 +23,23 @@ body {
 h1 {
   font-family:'Retro';
   font-weight:bold;
-  font-size: 200px;
+  font-size: 150px;
   color:black;
-  margin-bottom:-20px;
-  display: block;
+  margin-bottom:20px;
+  margin-top: 2px;
+  /*display: block;*/
 }
 
 #caption {
   text-align:left;
   background:none;
   padding-left: 10px;
+  margin-top:-200px;
+}
+
+#main-container {
+  height:180px;
+  width:600px;
 }
 
 p {
@@ -50,6 +63,10 @@ div {
   text-align:center;
   font-family:'Retro';
   font-size:100px;
+}
+
+#header {
+  text-align:left;
 }
 
 #red {
@@ -82,3 +99,7 @@ a:hover {
   text-decoration: underline;
   font-family: 'RetroLight';
 }
+
+/*#hide {
+  display: none;
+}*/
