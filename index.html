@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="portfolio">
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rokkitt:200" rel="stylesheet">
     <title>Alex Wandres</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div style="display:inline-block;" id="header">
-    <h1 style="display:inline-block; float:left;"> Alex <br id="hide"> Wandres </h1>
-    <img style="height:500px; width:400px; clear:left; padding-left:300px; border-radius:50px;"src="img/GA-portrait.jpg" />
+    <div ng-style="shrink" id="header">
+    <h1 style="display:inline-block; float:left;"> Alex <br ng-style="hide" id="hide"> Wandres </h1>
+    <img ng-style = "hide" style="height:500px; width:400px; clear:left; margin-left:300px; border-radius:500px;"src="img/GA-portrait.jpg" />
   </div>
 
-  <div id="caption">
-    <p> Commited to Code </p>
+
+  <div ng-style="hide" id="caption">
+    <p id="caption-text"> Committed to Code </p>
   </div>
 
 
   <div id="main-container">
-  </div>
+
+    <div data-ui-view id="view">
+
+    </div>
+
     <aside>
       <div>
-          <a id="red" href="www.milestonesofficial.com">About Me</a>
+          <a id="red" ng-class="{selected:selected}"  ui-sref="About" ng-model="selected" ng-click="hide={'display':'none'} ; shrink={'height':'50px'}">About Me</a>
       </div>
       <div>
-          <a id="orange" href="www.milestonesofficial.com">Projects</a>
+          <a id="orange" ui-sref="Projects" ng-click="hide={'display':'none'} ; shrink={'height':'50px'}">Projects</a>
       </div>
       <div>
-          <a id="blue" href="www.milestonesofficial.com">Resume</a>
+          <a id="blue" ui-sref="Resume">Resume</a>
       </div>
 
       <div>
-          <a id="green" href="www.milestonesofficial.com">Contact</a>
+          <a id="green" ui-sref="Contact">Contact</a>
       </div>
     </aside>
-
+</div>
   </body>
 </html>

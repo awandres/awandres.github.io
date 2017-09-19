@@ -1,0 +1,19 @@
+{
+  "name": "awandres.github.io2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awandres/awandres.github.io2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awandres/awandres.github.io2/issues"
+  },
+  "homepage": "https://github.com/awandres/awandres.github.io2#readme",
+  "description": ""
+}

@@ -38,14 +38,39 @@ h1 {
 }
 
 #main-container {
-  height:180px;
-  width:600px;
+  height:580px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  margin-top:250px;
 }
 
-p {
+#view {
+  height:inherit;
+  width:850px;
+  background:white;
+  margin-top:-140px;
+  height:720px;
+  overflow: scroll;
+}
+#caption-text {
   font-family: 'Retro';
   font-weight:lighter;
   font-size:50px;
+}
+
+p {
+  font-family: 'Rokkitt', serif;
+  font-weight:lighter;
+  font-size:30px;
+}
+
+ul {
+  font-size:50px;
+  font-weight:100;
+  list-style:none;
+  font-family: 'Retro';
+
 }
 
 aside {
@@ -56,7 +81,9 @@ aside {
   margin-top:-140px;
   padding-top:20px;
   margin-right:auto;
-  min-width:1000px;
+  min-width:500px;
+
+
 }
 
 div {
@@ -67,6 +94,7 @@ div {
 
 #header {
   text-align:left;
+  height:500px;
 }
 
 #red {
@@ -95,6 +123,12 @@ a {
 }
 
 a:hover {
+  font-weight:normal;
+  text-decoration: underline;
+  font-family: 'RetroLight';
+}
+
+.selected {
   font-weight:normal;
   text-decoration: underline;
   font-family: 'RetroLight';
